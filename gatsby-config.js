@@ -20,12 +20,12 @@ const contentfulConfig = {
 }
 
 module.exports = {
-  // siteMetadata: {
-  //   title: `Leire Polo Martin`,
-  //   description: `Leire Polo Martin profesional profile`,
-  //   author: `@leireNN`,
-  //   siteUrl: 'default url',
-  // },
+  siteMetadata: {
+    title: `Leire Polo Martin`,
+    description: `Leire Polo Martin profesional profile`,
+    author: `Leire Polo Martin`,
+    siteUrl: 'https://www.google.com',
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
@@ -84,8 +84,6 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'default url',
-        sitemap: 'default url-sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },
